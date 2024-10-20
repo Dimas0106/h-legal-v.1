@@ -1,0 +1,83 @@
+.svg-list{
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+}
+
+.footer {
+    background-color: $bg-color;
+    padding: 62px 30px 30px;
+    text-align: center;
+
+    @media screen and (min-width:$breakpoint-md) {
+        padding: 62px 60px 30px;
+        display: flex;
+    }
+
+    @media screen and (min-width:$breakpoint-xxl) {
+        padding: 62px 160px 30px;
+    }
+
+    &__menu {
+    }
+
+    &__menu-nav {
+        padding-bottom: 21px;
+        display: flex;
+        flex-flow: column;
+    
+
+    @media screen and (min-width:$breakpoint-md) {
+        flex-flow: row;
+        gap: 20px;
+        align-items: center;
+    }
+    }
+    &__menu-adress {
+        color: $main-color;
+        padding-bottom: 10px;
+    }
+
+    &__menu-map {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        color: $regular-color;
+    }
+
+    &__menu-contact {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        padding-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-md) {
+            flex-flow: row;
+            gap: 20px;
+            align-items: center;
+    }
+        }
+    &__menu-contact-tel {
+        color: $alt-color;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &__menu-mail {
+        color: $regular-color;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &__menu-llc {
+        margin-left: auto;
+        color: $text-color;
+    }
+}
+
+.footer__menu-contact svg{
+    width: 38px;
+    height: 38px;
+}

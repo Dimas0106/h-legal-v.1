@@ -1,0 +1,81 @@
+.services {
+
+
+    &__title{
+        background-image: $gradient-red-text;
+        color: transparent;
+        background-clip: text;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0 30px;
+
+        @media  screen and (min-width:$breakpoint-md) {
+            font-size: 38px;
+            margin-bottom: 60px;
+        }
+        
+    }
+
+    &__block {
+        @media (min-width:$breakpoint-md) {
+            display: flex;
+            flex: 1 0 0;
+            flex-wrap: wrap;
+            height: 100%;
+            gap: 60px;
+            }
+    }
+
+    &__block-content {
+        width: 100%;
+        padding-bottom: 30px;
+
+        @media (min-width:$breakpoint-md) {
+            width: 45%;
+            padding-bottom: 0;
+            
+        } 
+        @media (min-width:$breakpoint-lg) {
+            width: 28%;
+        }
+            
+        
+    }
+
+    &__block-icon{
+        width: 92px;
+        height: 92px;
+        margin-bottom: 30px;
+    }
+
+    &__block-title {
+        color: $regular-color;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-decoration: none;
+    }
+
+    &__block-desc {
+        line-height: 26px;
+        color: $basic-white;
+    }
+}
+.ecommerce{
+    background-image: url(/src/img/ecommerce.svg);
+}
+.support{
+    background-image: url(/src/img/support.svg);
+}
+.corporate{
+    background-image: url(/src/img/coprorate.svg);
+}
+.trust{
+    background-image: url(/src/img/trust.svg);
+}
+.protection{
+    background-image: url(/src/img/protection.svg);
+}
+.court{
+    background-image: url(/src/img/court.svg);
+}
